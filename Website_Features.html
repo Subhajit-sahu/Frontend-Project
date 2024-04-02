@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-Features</title>
+    <link rel="stylesheet" href="Website_Features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- <h1>How Morden Devlopment Looks Like !!</h1>
+        <h2>I Provide the code of some new features that makes you understand something @subhahit</h2> -->
+
+        <div class="Mouse-follower Project-box">
+            <h1 class="headings">Mouse Follower</h1>
+            <div class="mouse-follower box">
+                <div class="html box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2></h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang=&quot;en&quot;&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                        initial-scale=1.0&quot;&gt;<br>
+                        &lt;title&gt;Cursor Style&lt;/title&gt;<br>
+                        &lt;link rel=&quot;stylesheet&quot; href=&quot;Cursor_Style.css&quot;&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;div id=&quot;main&quot;&gt;<br>
+                        &lt;div class=&quot;cursor&quot;&gt;&lt;/div&gt;<br>
+                        <br>
+                        &lt;h1&gt;Subhajit&lt;/h1&gt;<br>
+                        &lt;/div&gt;<br>
+                        <br>
+                        &lt;script src=&quot;Cursor_Style.js&quot;&gt;&lt;/script&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+
+                    </p>
+                </div>
+                <div class="css box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2>/* CSS */</h2>
+                    <p>
+                        *{<br>
+                        margin: 0;<br>
+                        padding: 0;<br>
+                        box-sizing: border-box;<br>
+                        color: white;<br>
+                        }<br>
+                        <br>
+                        html,body{<br>
+                        height: 100%;<br>
+                        width: 100%;<br>
+                        }<br>
+                        <br>
+                        #main{<br>
+                        height: 100%;<br>
+                        width: 100%;<br>
+                        background-color: rgb(0,0,0);<br>
+                        display: flex;<br>
+                        justify-content: center;<br>
+                        align-items: center;<br>
+                        }<br>
+                        <br>
+                        .cursor{<br>
+                        height: 15px;<br>
+                        width: 15px;<br>
+                        background-color: lightgray;<br>
+                        border-radius: 50%;<br>
+                        position: absolute;<br>
+                        transition: all linear 0.15s;<br>
+                        mix-blend-mode: difference;<br>
+                        transform: translate(-65%,-65%);<br>
+                        }<br>
+                        <br>
+                        h1{<br>
+                        font-size: 6vw;<br>
+                        color: transparent;<br>
+                        -webkit-text-stroke: 1px #fff;<br>
+                        font-weight: 900;<br>
+                        }<br>
+                        <br>
+                        h1:hover{<br>
+                        color: white;<br>
+                        }<br>
+
+                    </p>
+                </div>
+                <div class="js box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2>// JavaScript</h2>
+                    <p>
+                        var main = document.querySelector("#main");<br>
+                        var cursor = document.querySelector(".cursor");<br>
+                        <br>
+                        main.addEventListener("mousemove", function(event) {<br>
+                        cursor.style.left = `${event.x}px`;<br>
+                        cursor.style.top = `${event.y}px`;<br>
+                        cursor.style.opacity = 1;<br>
+                        });<br>
+                        <br>
+                        main.addEventListener("mouseleave", function() {<br>
+                        cursor.style.opacity = 0;<br>
+                        });<br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Image-slider Project-box">
+            <h1>Image Slider</h1>
+            <div class="image-slider box">
+                <div class="html box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2></h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang=&quot;en&quot;&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                        initial-scale=1.0&quot;&gt;<br>
+                        &lt;title&gt;Image Slider&lt;/title&gt;<br>
+                        &lt;link rel=&quot;stylesheet&quot;
+                        href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+                        integrity=&quot;sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==&quot;
+                        crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot; /&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;div class=&quot;slider-container&quot;&gt;<br>
+                        &lt;div class=&quot;img-container&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/237/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/1/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/239/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/240/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/241/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/242/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/244/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/145/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;img src=&quot;https://picsum.photos/id/146/500/300&quot; alt=&quot;image&quot;&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;i class=&quot;fa-solid fa-angles-left btn prev&quot;&gt;&lt;/i&gt;<br>
+                        &lt;i class=&quot;fa-solid fa-angles-right btn next&quot;&gt;&lt;/i&gt;<br>
+                        &lt;/div&gt;<br>
+                        <br>
+                        &lt;script src=&quot;Image_Slider.js&quot;&gt;&lt;/script&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+
+                    </p>
+                </div>
+                <div class="css box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2>/* CSS */</h2>
+                    <p>
+                        body{<br>
+                        margin: 0;<br>
+                        display: flex;<br>
+                        height: 100vh;<br>
+                        justify-content: center;<br>
+                        align-items: center;<br>
+                        background-color: wheat;<br>
+                        }<br>
+                        <br>
+                        .slider-container{<br>
+                        width: 450px;<br>
+                        height: 280px;<br>
+                        overflow: hidden;<br>
+                        border-radius: 10px;<br>
+                        box-shadow: 4px 4px 8px rgba(0,0,0,0.3);<br>
+                        position: relative;<br>
+                        }<br>
+                        <br>
+                        .img-container{<br>
+                        display: flex;<br>
+                        /* transform: translateX(-500px); */<br>
+                        transition: transform .4s ease-in-out;<br>
+                        }<br>
+                        <br>
+                        .btn{<br>
+                        position: absolute;<br>
+                        top: 50%;<br>
+                        color: white;<br>
+                        opacity: 0.6;<br>
+                        transform: translateY(-50%);<br>
+                        cursor: pointer;<br>
+                        transition: all 0.3s;<br>
+                        font-size: 20px;<br>
+                        }<br>
+                        <br>
+                        .btn:hover{<br>
+                        opacity: 1;<br>
+                        }<br>
+                        <br>
+                        .prev{<br>
+                        left: 15px;<br>
+                        }<br>
+                        <br>
+                        .next{<br>
+                        right: 15px;<br>
+                        }<br>
+
+                    </p>
+                </div>
+                <div class="js box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2>// JavaScript</h2>
+                    <p>
+                        let next = document.querySelector(".next");<br>
+                        let prev = document.querySelector(".prev");<br>
+                        let imageContainer = document.querySelector(".img-container");<br>
+                        let allImgs = document.querySelectorAll(".img-container img");<br>
+                        let currentimg = 1;<br>
+                        let timeout;<br>
+                        <br>
+                        next.addEventListener("click", function () {<br>
+                        currentimg++;<br>
+                        updateimg(currentimg);<br>
+                        clearTimeout(timeout);<br>
+                        })<br>
+                        prev.addEventListener("click", () => {<br>
+                        currentimg--;<br>
+                        updateimg();<br>
+                        clearTimeout(timeout);<br>
+                        })<br>
+                        <br>
+                        updateimg();<br>
+                        <br>
+                        function updateimg() {<br>
+                        if (currentimg > allImgs.length) {<br>
+                        currentimg = 1;<br>
+                        }<br>
+                        else if (currentimg < 1) {<br>
+                            currentimg = allImgs.length;<br>
+                            }<br>
+                            <br>
+                            timeout = setTimeout(() => {<br>
+                            updateimg();<br>
+                            currentimg++;<br>
+                            }, 3000)<br>
+                            <br>
+                            imageContainer.style.transform = `translateX(-${500 * (currentimg - 1)}px)`;<br>
+                            }<br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Auto-text-animation Project-box">
+            <h1>Auto Text Animation</h1>
+            <div class="auto-text-animation box">
+                <div class="html box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2></h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang=&quot;en&quot;&gt;<br>
+                        <br>
+                        &lt;head&gt;<br>
+                        &lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                        initial-scale=1.0&quot;&gt;<br>
+                        &lt;title&gt;Auto Anmatioed Text&lt;/title&gt;<br>
+                        &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;<br>
+                        &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;
+                        crossorigin&gt;<br>
+                        &lt;link
+                        href=&quot;https://fonts.googleapis.com/css2?family=Permanent+Marker&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap&quot;
+                        rel=&quot;stylesheet&quot;&gt;<br>
+                        &lt;/head&gt;<br>
+                        <br>
+                        &lt;body&gt;<br>
+                        &lt;div class=&quot;container&quot;&gt;<br>
+                        &lt;h1&gt;&lt;/h1&gt;<br>
+                        &lt;/div&gt;<br>
+                        <br>
+                        &lt;script src=&quot;Auto_Text_Effect_Animation.js&quot;&gt;&lt;/script&gt;<br>
+                        &lt;/body&gt;<br>
+                        <br>
+                        &lt;/html&gt;<br>
+
+                    </p>
+                </div>
+                <div class="css box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2>/* CSS */</h2>
+                    <p>
+                        body {<br>
+                        margin: 0;<br>
+                        height: 100vh;<br>
+                        position: relative;<br>
+                        background-color: salmon;<br>
+                        font-family: "Permanent Marker", cursive;<br>
+                        }<br>
+                        <br>
+                        .container{<br>
+                        height: 100px;<br>
+                        width: 500px;<br>
+                        border: 1px solid black;<br>
+                        border-radius: 40px;<br>
+                        position: absolute;<br>
+                        left: 10px;<br>
+                        top: 10px;<br>
+                        display: flex;<br>
+                        justify-content: center;<br>
+                        align-items: center;<br>
+                        }<br>
+
+                    </p>
+                </div>
+                <div class="js box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2>// JavaScript</h2>
+                    <p>
+                        const container1 = document.querySelector(".container h1");<br>
+                        const careers = ["Youtuber","Web Devloper","Freelancer","Instructor"];<br>
+                        let careerIndex = 0;<br>
+                        <br>
+                        let charcterIndex = 0;<br>
+                        <br>
+                        setInterval(() => {<br>
+                        charcterIndex++;<br>
+                        console.log(charcterIndex);<br>
+                        updateText();<br>
+                        if (charcterIndex > careers[careerIndex].length) {<br>
+                        charcterIndex = 0;<br>
+                        careerIndex++;<br>
+                        }<br>
+                        if (careerIndex > careers.length - 1) {<br>
+                        careerIndex = 0;<br>
+                        }<br>
+                        }, 500)<br>
+                        <br>
+                        function updateText() {<br>
+                        if (careerIndex == 3) {<br>
+                        container1.innerHTML = `
+                        &lt;h2&gt;I am an ${careers[careerIndex].slice(0,charcterIndex)}&lt;/h2&gt;`;<br>
+                        } else {<br>
+                        container1.innerHTML = `&lt;h2&gt;I am a
+                        ${careers[careerIndex].slice(0,charcterIndex)}&lt;/h2&gt;`;<br>
+                        }<br>
+                        }
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Heart-Trail-Animation Project-box">
+            <h1>Heart Trail Animation &lt;3 </h1>
+            <div class="heart-trail-animation box">
+                <div class="html box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2></h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang=&quot;en&quot;&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                        initial-scale=1.0&quot;&gt;<br>
+                        &lt;title&gt;Herat Trail Animation&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;span&gt;&lt;/span&gt;<br>
+                        <br>
+                        &lt;script src=&quot;Heart_Trail_Animation.js&quot;&gt;&lt;/script&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+
+                    </p>
+                </div>
+                <div class="css box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2>/* CSS */</h2>
+                    <p>
+                        body{<br>
+                        margin: 0;<br>
+                        height: 100vh;<br>
+                        background-color: #000;<br>
+                        overflow: hidden;<br>
+                        }<br>
+                        span{<br>
+                        background: url('love-img.png');<br>
+                        position: absolute;<br>
+                        pointer-events: none;<br>
+                        background-size: contain;<br>
+                        left: 50%;<br>
+                        top: 50%;<br>
+                        transform: translate(-50%,-50%);<br>
+                        animation: animate 6s linear;<br>
+                        }<br>
+                        @keyframes animate {<br>
+                        0%{<br>
+                        transform: translate(-50%,-50%);<br>
+                        opacity: 1;<br>
+                        }<br>
+                        100%{<br>
+                        transform: translate(-50%,-5000%);<br>
+                        opacity: 0;<br>
+                        filter: hue-rotate(720deg);<br>
+                        }<br>
+                        }<br>
+
+                    </p>
+                </div>
+                <div class="js box-item">
+                    <i class="fa-solid fa-copy copy"></i>
+                    <h2>// JavaScript</h2>
+                    <p>
+                        const body = document.querySelector("body");<br>
+                        let love = document.querySelector("span");<br>
+                        let div = document.querySelector("div");<br>
+                        <br>
+                        body.addEventListener("mousemove",(e)=>{<br>
+                        const xPos = e.x;<br>
+                        const yPos = e.y;<br>
+                        <br>
+                        const spanE1 = document.createElement("span");<br>
+                        spanE1.style.left = xPos + "px";<br>
+                        spanE1.style.top = yPos + "px";<br>
+                        body.appendChild(spanE1);<br>
+                        const size = Math.floor(Math.random() * 60) + 1;<br>
+                        spanE1.style.width = size + "px";<br>
+                        spanE1.style.height = size + "px";<br>
+                        spanE1.style.color = randomColor();<br>
+                        setTimeout(()=>{<br>
+                        spanE1.remove();<br>
+                        },4000)<br>
+                        })<br>
+                        function randomColor(){<br>
+                        let red = Math.floor(Math.random() * 256);<br>
+                        let green = Math.floor(Math.random() * 256);<br>
+                        let blue = Math.floor(Math.random() * 256);<br>
+                        return `rgb(${red},${green},${blue})`;<br>
+                        }<br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="home-buttom">
+            <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </div>
+
+
+    <script>
+        let html_heading = document.querySelectorAll(".box .html h2");
+        for (el of html_heading) {
+            el.innerText = " <!-- HTML -->";
+            el.style.color = "#c2d52a"
+        }
+        // Get all elements with the class 'content'
+        var contentDivs = document.querySelectorAll('.box-item');
+
+        // Loop through each content div
+        contentDivs.forEach(function (contentDiv, index) {
+            // Get the paragraph content inside the current content div
+            var content = contentDiv.querySelector('p').innerText;
+
+            // Get the copy button inside the current content div
+            var copyButton = contentDiv.querySelector('.copy');
+
+            // Attach click event listener to the copy button
+            copyButton.addEventListener('click', function () {
+                // Create a temporary textarea element to copy the content to the clipboard
+                var textarea = document.createElement('textarea');
+                textarea.value = content;
+                document.body.appendChild(textarea);
+
+                // Select the content and copy it
+                textarea.select();
+                document.execCommand('copy');
+
+                // Clean up
+                document.body.removeChild(textarea);
+
+                // Provide some visual feedback (optional)
+                alert('Content copied to clipboard: ' + content);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/312105/pexels-photo-312105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size:cover;
+    object-fit:cover; 
+    object-position: center;
+    overflow: hidden;
+}
+
+.heading{
+    position: absolute;
+    height: 60px;
+    /* width: 100px; */
+    /* border: 1px solid red; */
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    color: rgba(255, 255, 255, 0.758);
+    font-weight: 600;
+}
+.faq-container{
+    position: absolute;
+    height: 70vh;
+    width: 60vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.faq-container::-webkit-scrollbar{
+   width: 10px;
+}
+
+.faq-container::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.faq-container::-webkit-scrollbar-thumb{
+    background-color: #888; 
+    border-radius: 5px; 
+}
+
+.box{
+    /* height: 200px; */
+    width: 90%;
+    padding: 40px 10px;
+    background-color: #00000081;
+}
+
+.box h3{
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+.box h5{
+    font-weight: 600;
+    font-size: 1.25vw;
+}
+
+.home-buttom{
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+}
+
+.home-buttom a i{
+    font-size: 30px;
+    cursor: pointer;
+    color:#000;
+}
+
+
+/* Responsive  */
+
+@media (max-width:500px){
+    .faq-container{
+        height: 80vh;
+        width: 95%;
+    }
+    .box{
+        padding: 20px 10px;
+    }
+    .box h3{
+        font-weight: 800;
+        font-size: 25px;
+    }
+    
+    .box h5{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .heading{
+        width: 100%;
+        left: 30%;
+        top: 1px;
+    }
+    .heading h1{
+        color: black;
+    }
+    .home-buttom{
+        top: 1%;
+        left: 85%;
+    }
+
+}
